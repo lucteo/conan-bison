@@ -33,7 +33,8 @@ class BisonConan(ConanFile):
         self.copy("*", dst="", src="out")
 
     def package_info(self):
-        self.cpp_info.libs = ['y']  # The libs to link against
-        self.cpp_info.libdirs = ['lib']  # Directories where libraries can be found
+        # Don't list the libraries generated; bison is mainly used as a tool
+        # self.cpp_info.libs = ['y']  # The libs to link against
+        # self.cpp_info.libdirs = ['lib']  # Directories where libraries can be found
         self.cpp_info.resdirs = ['share/bison']  # Directories where resources, data, etc can be found
         self.cpp_info.bindirs = ['bin']  # Directories where executables and shared libs can be found
