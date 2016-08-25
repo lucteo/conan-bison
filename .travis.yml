@@ -8,7 +8,7 @@ env:
     - CONAN_UPLOAD: 1
     - CONAN_REFERENCE: "bison/3.0.4"
     - CONAN_USERNAME: "lucteo"
-    - CONAN_CHANNEL: "ci"
+    - CONAN_CHANNEL: "stable"
     - CONAN_TOTAL_PAGES: 1
     - CONAN_CURRENT_PAGE: 1
 
