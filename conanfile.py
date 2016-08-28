@@ -9,7 +9,7 @@ class BisonConan(ConanFile):
     license = "GNU General Public License: https://www.gnu.org/licenses/gpl.html"
     settings = "os", "compiler", "build_type", "arch"
     exports = "*"    
-    build_policy= "always"  # Bison needs to compiled on each machine to be used
+    build_policy= "missing" # Bison needs to compiled on each machine to be used
                             # It hardcodes some paths from the machine it builds
 
     archiveName = "bison-3.0.4.tar.gz"
