@@ -26,7 +26,7 @@ class BisonConan(ConanFile):
             env = ConfigureEnvironment(self.deps_cpp_info, self.settings)
             env_line = env.command_line
                         
-            self.run("cd %s && %s ./configure --disable-dependency-tracking --prefix=%s/out" % (self.folderName, env_line, self.conanfile_directory))
+            self.run("cd %s && %s ./configure --prefix=%s/out" % (self.folderName, env_line, self.conanfile_directory))
             self.run("cd %s && %s make" % (self.folderName, env_line))            
             self.run("cd %s && %s make install " % (self.folderName, env_line))            
 
