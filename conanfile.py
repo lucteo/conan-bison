@@ -8,8 +8,9 @@ class BisonConan(ConanFile):
     url = "https://github.com/lucteo/conan-bison.git"
     license = "GNU General Public License: https://www.gnu.org/licenses/gpl.html"
     settings = "os", "compiler", "build_type", "arch"
-    exports = ""    # Bison needs to compiled on each machine to be used
-                    # It hardcodes some paths from the machine it builds
+    exports = "*"    
+    build_policy= "always"  # Bison needs to compiled on each machine to be used
+                            # It hardcodes some paths from the machine it builds
 
     archiveName = "bison-3.0.4.tar.gz"
     folderName = "bison-3.0.4"
