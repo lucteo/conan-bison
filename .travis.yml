@@ -5,7 +5,7 @@ services:
   - docker
 env:
   global:
-    - CONAN_UPLOAD: 1
+    - CONAN_UPLOAD: 0
     - CONAN_REFERENCE: "bison/3.0.4"
     - CONAN_USERNAME: "lucteo"
     - CONAN_CHANNEL: "stable"
